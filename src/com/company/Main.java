@@ -7,7 +7,10 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        int ret = (new FindPathsOut()).findPaths(1, 3, 3, 0, 1);
-        System.out.println(ret);
+        int[] nums = new int[]{7,6,5,4,3,2,1};
+        int res = (new TopK()).findKthLargest(nums, 5);
+        System.out.println(Arrays.toString(nums));
+
+        System.out.println(res);
     }
 }
