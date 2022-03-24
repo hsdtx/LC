@@ -1,12 +1,12 @@
 package com.company;
 
-import com.company.algorithms.*;
+
+import com.company.algorithms.FindLengthOfLCIS;
 
 public class Main {
 
     public static void main(String[] args) {
-        String[] strs = new String[]{"a","b","a","b","a","c"};
-        String s = (new TopKString()).sol(strs, 3);
-        System.out.println(s);
+        int[] nums = new int[]{1,2,4,3,7};
+        System.out.println((new FindLengthOfLCIS()).findLengthOfLCIS(nums));
     }
 }
