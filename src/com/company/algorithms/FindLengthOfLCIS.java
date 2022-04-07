@@ -30,4 +30,19 @@ public class FindLengthOfLCIS {
 //        System.out.println(Arrays.toString(dp));
         return max;
     }
+
+    public int v2(int[] nums){
+        int ans = 1;
+        int cur = 1;
+        for (int i=1; i<nums.length; i++){
+            if (nums[i] > nums[i-1]){
+                cur++;
+                ans = Math.max(cur, ans);
+            }else{
+                cur = 1;
+            }
+        }
+
+        return ans;
+    }
 }
