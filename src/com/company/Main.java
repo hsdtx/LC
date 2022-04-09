@@ -1,13 +1,15 @@
 package com.company;
 
-import com.company.algorithms.MedianTwoSortedArray;
-import com.company.algorithms.MergeIntervals;
+import com.company.algorithms.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums1 = new int[]{1,3};
-        int[] nums2 = new int[]{2};
-        System.out.println((new MedianTwoSortedArray()).findMedianSortedArrays(nums1, nums2));
+        int ret = (new NumSquares()).numSquares(6);
+        System.out.println(ret);
     }
 }
