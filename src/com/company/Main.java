@@ -10,6 +10,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println((-3)/2);
+        int[] nums = new int[]{4,6,7,5};
+        boolean ret = (new VerifyPostorder()).v1(nums);
+        System.out.println(ret);
     }
 }

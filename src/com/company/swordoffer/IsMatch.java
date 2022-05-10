@@ -10,9 +10,7 @@ public class IsMatch {
         int sIndex = 0;
         int pIndex = 0;
 
-        while (sIndex < sLen || pIndex < pLen){
-            
-        }
+        return false;
     }
 
 }
