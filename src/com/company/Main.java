@@ -10,8 +10,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{4,6,7,5};
-        boolean ret = (new VerifyPostorder()).v1(nums);
+        int ret = (new NUglyNumber()).v1(10);
         System.out.println(ret);
     }
 }
