@@ -1,15 +1,16 @@
 package com.company;
 
 import com.company.algorithms.*;
+import com.company.swordoffer.FindNthDigit;
+import com.company.swordoffer.LengthOfLongestSubstring;
+import com.company.swordoffer.MinArray;
+import com.company.swordoffer.MinNumber;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        int ret = (new NumSquares()).numSquares(6);
-        System.out.println(ret);
     }
+
 }
