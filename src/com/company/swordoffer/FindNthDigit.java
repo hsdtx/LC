@@ -2,28 +2,19 @@ package com.company.swordoffer;
 
 public class FindNthDigit {
 
-    public int v1(int n){
-        if (n== 0) return 0;
-
-        int index=1, digitNum=0;
+    /**
+     * 时间复杂度nlog10n，会超时
+     */
+    public int findNthDigit(int n){
+        int index = 0, digitNum = 0;
         while (digitNum < n){
-            int tempDigit = 0, tempIndex = index;
-            while (tempIndex > 0){
-                tempIndex /= 10;
-                tempDigit ++;
-            }
-            digitNum += tempDigit;
+            digitNum += index/10+1;
             index++;
         }
 
-        //index复原
+        //把数复原到上一步
         index--;
-        int res = 0;
-        for (int i=0; i<=digitNum-n; i++){
-            res = index%10;
-            index /= 10;
-        }
-
-        return res;
+        return (int) (index%(Math.pow(10, (digitNum-n)+1)));
     }
+
 }
